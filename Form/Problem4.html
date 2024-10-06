@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="name@gmail.com" required><br><br>
+
+        <label for="number">Roll No</label><br>
+        <input type="number" name="number" id="number" placeholder="rollno" min="1" max="50" required><br><br>
+
+        <label for="drop-down">How do you rate our courses?</label>
+       <select name="drop-down" id="drop-down">
+            <option value="excellent">Excellent</option>
+            <option value="average"> Average</option>
+            <option value="poor">Poor</option>
+        </select><br><br>
+
+        <label>Your Favorite Topic in HTML?</label><br>
+        <input type="checkbox" name="topic1" value="Structural Elements">Structural Elements<br>
+        <input type="checkbox" name="topic2" value="Links and List">Links and List<br>
+        <input type="checkbox" name="topic3" value="HTML Madia">HTML Media<br>
+        <input type="checkbox" name="topic4" value="HTML Table">HTML Table <br>
+        <input type="checkbox" name="topic5" value="Grouping Elements">Grouping Elements<br>
+        <input type="checkbox" name="topic6" value="Forms">Forms<br><br>
+
+        <label>Do you like the HTML courses?</label><br>
+        <input type="radio" name="course" value="Yes">Yes<br>
+        <input type="radio" name="course" value="No">No <br><br>
+
+        <label>Few words about course.</label><br>
+        <textarea rows="5" cols="50"></textarea><br><br>
+
+        <button type="submit" onclick="alert('validating')">submit</button>
+    </form>
+</body>
+</html>
